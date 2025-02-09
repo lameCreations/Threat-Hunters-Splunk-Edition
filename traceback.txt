@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 100, in script
+    call screen main_menu_selection
+ScriptError: could not find label 'trainingVideoMenu'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "D:\renpy\renpy-8.2.1-sdk\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "D:\renpy\renpy-8.2.1-sdk\renpy\main.py", line 635, in main
+    run(restart)
+  File "D:\renpy\renpy-8.2.1-sdk\renpy\main.py", line 145, in run
+    renpy.execution.run_context(True)
+  File "D:\renpy\renpy-8.2.1-sdk\renpy\execution.py", line 955, in run_context
+    context.run()
+  File "game/script.rpy", line 100, in script
+    call screen main_menu_selection
+  File "D:\renpy\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'trainingVideoMenu'.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.2.1.24030407
+Threat Hunters Splunk Edition 1.0
+Sun Feb  9 08:28:19 2025
