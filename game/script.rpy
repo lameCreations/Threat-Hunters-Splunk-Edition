@@ -54,19 +54,6 @@ label start:
     call InitializeMemberVideos from _call_InitializeMemberVideos
     call InitializeToolsVideos from _call_InitializeToolsVideos
 
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
-    show eileen happy
-
-    # These display lines of dialogue.
-
-    "You've created a new Ren'Py game."
-    $ myPov = renpy.input("What is your name", length=32)
-    "Once you add a story, pictures, and music, you can release it to the world!"
 
     if not persistent.intro_shown:
         scene darkcyberbg
